@@ -1,0 +1,59 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+}
+
+input,
+img,
+textarea,
+button {
+    vertical-align: middle;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
+address {
+    font-style: normal;
+}
+
+header,
+nav,
+main,
+article,
+aside,
+section,
+footer {
+    display: block;
+}
