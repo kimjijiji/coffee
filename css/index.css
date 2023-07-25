@@ -10,11 +10,15 @@
 }
 
 /*======= header =======*/
+h1 {
+    display: none;
+}
 
-
+.mainmenu {
+    background-color: black;
+}
 
 /*======= main =======*/
-
 
 
 /*======= footer =======*/
