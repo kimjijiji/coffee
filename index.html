@@ -5,20 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.js"></script>
+    <script>
+        $(function() {
+            $('.mobile-btn').on('click', function() {
+                $('.gnb').slideToggle();
+            })
+        })
+    </script>
     <title>coffee</title>
 </head>
 <body>
     <header>
-        <h1>Coffee</h1>
-        <nav class="mainmenu">
+        <div class="logo-menu"> <!-- 안에 로고와 메뉴가 있음을 알려줌 -->
             <div class="container"> <!-- 그리드시스템 -->
-                <ul class="gnb">
-                    <li><a href="#intro">카페소개</a></li>
-                    <li><a href="#map">오시는 길</a></li>
-                    <li><a href="#recommend">이 달의 추천</a></li>
-                </ul>
+                <h1>Coffee</h1>
+                <nav class="mainmenu">
+                    <ul class="gnb">
+                        <li><a href="#intro">카페소개</a></li>
+                        <li><a href="#map">오시는 길</a></li>
+                        <li><a href="#recommend">이 달의 추천</a></li>
+                    </ul>
+                </nav><!-- mainmenu -->
+    
+                <div class="mobile-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div><!-- container -->
-        </nav><!-- mainmenu -->
+        </div><!-- logo-menu -->
     </header>
 
     <main>
