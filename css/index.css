@@ -10,19 +10,147 @@
 }
 
 /*======= header =======*/
-h1 {
-    display: none;
+/* mobile */
+header {
+    width: 100%;
+    height: 300px;
+    background: url(../images/header.jpg) no-repeat left top;
+    background-size: cover;
 }
 
 .mainmenu {
     background-color: black;
 }
 
+.gnb {
+    display: flex;
+}
+
+.gnb > li {
+    padding: 20px;
+}
+
+.gnb > li > a {
+    color: #fff;
+}
+
+/* tablet */
+@media (min-width:768px) {
+    header {
+        height: 400px;
+    }
+}
+
+/* pc */
+@media (min-width:1024px) {
+    header {
+        height: 500px;
+    }
+}
+
+
 /*======= main =======*/
+/* mobile */
+section {
+    padding: 30px;
+    background-color: antiquewhite;
+}
+
+section#map {
+    background-color: #ccc;
+}
+
+.flex-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-content .photo {
+    display: none;
+}
+
+.content-txt {
+    margin-top: 20px;
+}
+
+.content-txt > p {
+    font-weight: 600;
+}
+
+#choice .content-txt > h3 {
+    color: skyblue;
+    margin-bottom: 15px;
+}
+
+#choice .content-txt li {
+    list-style-type: decimal;
+    list-style-position: inside;
+    margin-bottom: 5px;
+}
+
+/* tablet */
+@media (min-width:768px) {
+    .flex-content {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .flex-content > section {
+        width: 50%;
+        border: 1px dotted #aaa;
+    }
+
+    .flex-content > section#choice {
+        width: 100%;
+    }
+}
+
+/* pc */
+@media (min-width:1024px) {
+    .flex-content {
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    .flex-content > section {
+        width: 100%;
+        border: none;
+    }
+
+    .flex-box {
+        display: flex;
+    }
+
+    .flex-box .photo { /* 사진 안보이던걸 보이게 */
+        display: block;
+        margin: 20px 20px 0 0;
+    }
+
+    section#choice .flex-box .photo {
+        order: 2;
+        margin-right: 0;
+        margin-left: 50px;
+    }
+    
+    section#choice .flex-box .photo > img {
+        border-radius: 50%;
+    }
+
+    section#choice .flex-box .content-txt {
+        order: 1;
+    }
+}
 
 
 /*======= footer =======*/
+footer {
+    width: 100%; height: 100px;
+    background-color: #000;
+}
 
-
-
-
+footer > h2 {
+    color: #fff;
+    font-family: 'Yeon Sung'; /*글꼴에 +들어가는건 없음 공백으로 변경*/
+    text-align: center;
+    line-height: 100px;
+}
